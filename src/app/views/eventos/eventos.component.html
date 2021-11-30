@@ -1,0 +1,81 @@
+  <button mat-raised-button style="margin-left: 700px;">EVENTO<mat-icon>add_circle</mat-icon></button>
+
+  <mat-tab-group mat-align-tabs="start">
+    <mat-tab label="PRÓXIMOS">
+
+      <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%;">
+        <ng-container style="margin: 0.5%;">
+
+          <mat-card class="mat-card-evento"
+          fxFlex="0 1 calc(33.3% - 11px)"
+          fxFlex.lt-md="0 1 calc(50% - 11px)"
+          fxFlex.lt-sm="100%">
+
+          <mat-card-title class="mat-card-title-evento">
+
+            <div class="row">
+              <p>
+                <span style="font-size: 2rem;" fxFlex="70" fxLayoutAlign="start center">Encontro dos Jovens</span>
+              </p>
+              <p>
+                <span fxFlex="25" fxLayoutAlign="end center">10/10/2021 às 17:00</span>
+              </p>
+              <p style="font-size: 1.2rem;">
+                Descrição: <span></span>
+                <img style="width: 50%;" mat-card-image src="https://i.ytimg.com/vi/pLLd27inuFQ/maxresdefault.jpg" alt="Foto Encontro de Jovens">
+              </p>
+            </div>
+            </mat-card-title>
+
+            <mat-card-content fxLayoutAlign="center center">
+              <p>
+                Encontro direcionado aos jovens. Para estudar sobre a história de Daniel.
+              </p>
+            </mat-card-content>
+          </mat-card>
+
+        </ng-container>
+
+        <ng-container style="margin: 0.5%;">
+        <mat-card class="mat-card-evento"
+        fxFlex="0 1 calc(33.3% - 11px)"
+        fxFlex.lt-md="0 1 calc(50% - 11px)"
+        fxFlex.lt-sm="100%">
+
+          <mat-card-title class="mat-card-title-evento">
+
+            <div class="row">
+              <p>
+                <span style="font-size: 2rem;" fxFlex="70" fxLayoutAlign="start center">Culto</span>
+              </p>
+              <p>
+                <span fxFlex="25" fxLayoutAlign="end center">11/10/2021 às 10:00</span>
+              </p>
+              <p style="font-size: 1.2rem;">
+                Descrição: <span></span>
+                <img style="width: 50%;" mat-card-image src="https://www.adjcaicara.com.br/storage/shares/videos/culto%20dos%20var%C3%B5es.jpg" alt="Foto Encontro de Jovens">
+              </p>
+            </div>
+          </mat-card-title>
+
+          <mat-card-content fxLayoutAlign="center center">
+            <p>
+              Culto de adoração a Deus.
+            </p>
+          </mat-card-content>
+        </mat-card>
+
+      </ng-container>
+    </div>
+
+
+    </mat-tab>
+
+
+    <mat-tab label="REALIZADOS">
+
+    </mat-tab>
+
+
+
+  </mat-tab-group>

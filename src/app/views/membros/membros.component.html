@@ -1,0 +1,29 @@
+<section class="container">
+
+<h3 class="titulo">Tabela de Membros</h3>
+
+<table class="tabela">
+  <thead class="tabela__cabecalho">
+    <th class="tabela__cabecalho__conteudo">Nome</th>
+    <th class="tabela__cabecalho__conteudo">Data de Nascimento</th>
+    <th class="tabela__cabecalho__conteudo">Endereço</th>
+    <th class="tabela__cabecalho__conteudo">E-mail</th>
+  </thead>
+
+  <tbody *ngIf="transferencias?.length > 0; else listaVazia">
+    <tr class="tabela__linha" *ngFor="let transferencia of transferencias">
+      <td class="tabela__conteudo">{{transferencia.name}}</td>
+      <td class="tabela__conteudo">{{transferencia.birthday}}</td>
+      <td class="tabela__conteudo">{{transferencia.address}}</td>
+      <td class="tabela__conteudo">{{transferencia.mail}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #listaVazia>
+  <p>Nenhum membro cadastrado.</p>
+</ng-template>
+
+
+<p>{{campoComErro}}</p>
+</section>
